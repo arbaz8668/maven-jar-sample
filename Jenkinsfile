@@ -10,7 +10,6 @@ pipeline{
             steps{
                 echo "========executing Maven build========"
                 mvn clean install
-
             }
             post{
                 always{
