@@ -9,7 +9,8 @@ pipeline{
         stage("Maven build"){
             steps{
                 echo "========executing Maven build========"
-                mvn clean install
+                sh "mvn clean install"
+                sh "mvn clean package"
             }
             post{
                 always{
